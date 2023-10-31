@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+    <title>Task manager</title>
+</head>
+<body>
+    <div class="body__header header">
+        <p class="header__greeting greeting">Hello, today is</p>
+        <p class="header__date date" id="date"></p>
+    </div>
+    <div class="body__container container">
+        <div class="container__input-container input-container">
+            <form class="container__input-form input-form">
+                <input class="input-form__input input" id="input" type="text" placeholder="Enter a task..." maxlength="30" autocomplete="off">
+                <button class="input-form__button button add-button" id="add">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </form>
+            <p class="container__error-msg error-msg hidden" id="error-msg">This field can't be empty!</p>
+        </div>
+        <div class="container__list-container list-container" id="task-list">
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
